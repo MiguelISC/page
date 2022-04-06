@@ -1,14 +1,15 @@
 $(function(){
-	let equipo = $('#yo').offset().top,
-		servicio = $('#conocimientos').offset().top,
-		trabajo = $('#experto').offset().top,
+
+	let yo = $('#yo').offset().top,
+		conocimientos = $('#conocimientos').offset().top,
+		experto = $('#experto').offset().top,
 		contacto = $('#contacto').offset().top;
 
 	window.addEventListener('resize', function(){
-		let equipo = $('#yo').offset().top,
-		servicio = $('#conocimientos').offset().top,
-		trabajo = $('#experto').offset().top,
-		contacto = $('#contacto').offset().top;		
+		let yo = $('#yo').offset().top,
+		conocimientos = $('#conocimientos').offset().top,
+		experto = $('#experto').offset().top,
+		contacto = $('#contacto').offset().top;	
 	});
 
 	$('#enlace-inicio').on('click', function(e){
@@ -21,21 +22,21 @@ $(function(){
 	$('#enlace-yo').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: equipo -100
+			scrollTop: yo -100
 		},600);
 	});
 
 	$('#enlace-conocimientos').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: servicio -100
+			scrollTop: conocimientos -100
 		},600);
 	});
 
 	$('#enlace-experto').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: trabajo -100
+			scrollTop: experto -100
 		},600);
 	});
 
